@@ -48,7 +48,7 @@ public class MalaCloudApplication {
 
 
 	@GetMapping("/mala")
-	public String teste(){ return  "{codigo: 222}, {placa:XXXX -hshshsh}, {codigo:3}, {placa:ZZZZZ - ZZZZZ}";
+	public String teste(){ return  "{codigo: 333}, {placa:XXXX -444}, {codigo:3}, {placa:ZZZZZ - ZZZZZ}";
 	}
 
 

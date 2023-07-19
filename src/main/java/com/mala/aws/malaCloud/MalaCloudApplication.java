@@ -48,8 +48,12 @@ public class MalaCloudApplication {
 
 
 	@GetMapping("/mala")
-
 	public String teste(){ return  "{codigo: 1}, {placa:XXXX -1234}, {codigo:2}, {placa:YYYY - 4567}";
+	}
+
+
+	@GetMapping("/durval")
+	public String durvla(){ return  "{codigo: durval 1}, {placa:durval  -1234}, {codigo:2}, {placa:durval - 4567}";
 	}
 
 }

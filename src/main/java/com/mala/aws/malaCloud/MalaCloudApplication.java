@@ -59,4 +59,9 @@ public class MalaCloudApplication {
 	@GetMapping("/novoteste")
 	public String novotestenovo(){ return  "{codigo: teste}, {placa:teste -1234}, {codigo:teste}, {placa:teste - 4567}";
 	}
+
+	@GetMapping("/durvale")
+	public String durval(){ return  "{codigo: 24 - DURVAL GAY}, {GAY GAY GAY D U R V AL}";
+	}
+
 }

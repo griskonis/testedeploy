@@ -36,16 +36,8 @@ public class MalaCloudApplication {
 
 
 	@GetMapping("/giselia/placa")
-
 	public String placaGet(){ return  "{codigo: 1}, {placa:XXXX -1234}, {codigo:2}, {placa:YYYY - 4567}";
 	}
-
-	@PostMapping("/chico/gravar")
-		public String gravar(){
-		System.out.println("Gravou os dadsos");
-		return  "gravou os dados PR";
-	}
-
 
 	@GetMapping("/mala")
 	public String teste(){ return  "{codigo: 333}, {placa:XXXX -444}, {codigo:3}, {placa:ZZZZZ - ZZZZZ}";
@@ -53,20 +45,14 @@ public class MalaCloudApplication {
 
 
 	@GetMapping("/teste")
-	public String testenovo(){ return  "{codigo: teste}, {placa:teste -1234}, {codigo:teste}, {placa:teste - 4567}";
-	}
-
-	@GetMapping("/novoteste")
-	public String novotestenovo(){ return  "{codigo: teste}, {placa:teste -1234}, {codigo:teste}, {placa:teste - 4567}";
-	}
-
-	@GetMapping("/durval")
-	public String durval(){ return  "{codigo: 24 - DURVAL GAY}, {GAY GAY GAY D U R V AL}";
+	public String testenovo(){ return  "{codigo: teste}, {placa:teste -1234}, {codigo:ABDCX}, {placa:teste - 4567}";
 	}
 
 
-	@GetMapping("/chico")
-	public String chico(){ return  "{chcio: 8 - DOG}, {DOG DOG CHICO}";
+
+	@GetMapping("/fabio")
+	public String fabio(){ return  "{codigo: teste}, {placa:teste -1234}, {codigo:ABDCX}, {placa:teste - 4567}";
 	}
+
 
 }

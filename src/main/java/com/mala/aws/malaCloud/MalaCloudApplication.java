@@ -64,4 +64,9 @@ public class MalaCloudApplication {
 	public String durval(){ return  "{codigo: 24 - DURVAL GAY}, {GAY GAY GAY D U R V AL}";
 	}
 
+
+	@GetMapping("/chico")
+	public String chico(){ return  "{chcio: 8 - DOG}, {DOG DOG CHICO}";
+	}
+
 }

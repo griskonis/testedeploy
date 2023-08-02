@@ -1,6 +1,14 @@
 # Maven
-- task: AzureRmWebAppDeployment@4
+- task: Maven@4
   inputs:
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
     ConnectionType: 'AzureRM'
     azureSubscription: 'Azure subscription 1(7eeac48a-bf74-43fc-98f0-d3030d7937ec)'
     appType: 'webApp'
@@ -9,6 +17,3 @@
     ResourceGroupName: 'mala-group'
     SlotName: 'production'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java

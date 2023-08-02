@@ -1,5 +1,5 @@
 # Maven
-- task: AzureRmWebAppDeployment@4
+ task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Azure subscription 1(7eeac48a-bf74-43fc-98f0-d3030d7937ec)'

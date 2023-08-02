@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: windows-latest
 
 steps:
 - task: Maven@3
@@ -16,6 +16,12 @@ steps:
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
+- task: AzureAppServiceManage@0
+  inputs:
+    azureSubscription: 'Azure subscription 1(7eeac48a-bf74-43fc-98f0-d3030d7937ec)'
+    Action: 'Swap Slots'
+    WebAppName: 'malatestespring'
+    ResourceGroupName: 'mala-group'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
